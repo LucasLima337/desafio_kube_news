@@ -46,4 +46,4 @@ jobs:
         with:
           action: deploy
           images: ${{ secrets.DOCKERHUB_USERNAME }}/kube-news:v${{ github.run_number }}
-          manifests: ./src
+          manifests: ./k8s
