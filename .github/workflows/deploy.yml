@@ -25,5 +25,5 @@ jobs:
           file: ./src/Dockerfile
           push: true
           tags: |
-            ${{ secrets.DOCKERHUB_USERNAME }}/kube-news:${{ github.run_number }}
+            ${{ secrets.DOCKERHUB_USERNAME }}/kube-news:v${{ github.run_number }}
             ${{ secrets.DOCKERHUB_USERNAME }}/kube-news:latest 
